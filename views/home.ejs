@@ -1,0 +1,7 @@
+<% layout('layout') -%>
+
+<% if (typeof currentUser != 'undefined') { %>
+    <p>Welcome <%= currentUser.firstName %> </p>
+    <% } else { %>
+     <p>Welcome. Sign in</p>
+<% } %>
